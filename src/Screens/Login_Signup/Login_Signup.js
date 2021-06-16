@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useHistory } from 'react-router-dom';
 import Logo from "../../Assets/index.png"
 import Login from '../../Components/Login';
 import Signup from '../../Components/Signup';
@@ -6,6 +7,7 @@ import Signup2 from '../../Components/Signup2';
 const Login_Signup = () => {
     const Wwidth=window.innerWidth*0.95;
     const Wheight=window.innerHeight;
+    const history=useHistory();
     const [state,setState]=useState('Login');
     const [pressed,setPressed]=useState('Login')
     console.log(window.innerWidth  + "  "+ window.innerHeight)
@@ -76,7 +78,7 @@ const Login_Signup = () => {
                           ,display:'flex',backgroundColor:'#ECECEC'}}>
                               <text style={{fontFamily:'Segoe UI Semibold',fontSize:14,color:'#313030'}}>Back</text>
                             </div>
-                              <div style={{width:'45%',height:Wheight/(1080/57),
+                              <div onMouseUpCapture={()=>history.push('/Dashboard')} style={{width:'45%',height:Wheight/(1080/57),
                           borderRadius:5,boxShadow:"0px 0.5px 3px #9E9E9E",alignItems:'center',justifyContent:'center'
                           ,display:'flex',backgroundColor:'#275473'}}>
                               <text style={{fontFamily:'Segoe UI Semibold',fontSize:14,color:'white'}}>Next</text>

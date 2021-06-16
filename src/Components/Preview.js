@@ -9,7 +9,7 @@ const Preview = props => {
         maxHeight:Wheight*.9/(1080/122),
         width:Wwidth*.85/(1920/323),
         height:Wheight*.8/(1080/122),
-        borderRadius:Wwidth/(1920/41),
+        borderRadius:Wwidth/(1920/21),
         padding:10,
         boxShadow:"0px 2px 4px #9E9E9E",
         backgroundColor:'white',

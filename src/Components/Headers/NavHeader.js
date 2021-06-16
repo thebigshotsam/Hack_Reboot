@@ -16,7 +16,7 @@ const NavHeader = props => {
         alignItems:'center',
         paddingLeft:'5%'
     }} >
-       <a onMouseEnter={()=>setHover('h')} onMouseLeave={()=>setHover(null)} onMouseUpCapture={()=>history.push('/')}  style={{
+       <a onMouseEnter={()=>setHover('h')} onMouseLeave={()=>setHover(null)} onMouseUpCapture={()=>history.push('/Dashboard')}  style={{
            width:'6.5%',
            backgroundColor:location.pathname === '/'?'#6468DB':hover === 'h'?'#5054C7':'',
            height:'100%',

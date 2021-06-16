@@ -11,6 +11,7 @@ function App() {
     <BrowserRouter>
     <Switch>      
       <Route path='/products' component={Products} />
+      <Route path='/Dashboard' exact component={Dashboard} />
       <Route path='/' exact component={Login_Signup} />
     </Switch>
     </BrowserRouter>

@@ -16,6 +16,7 @@ import Feed from '../../Assets/feed.png'
 import Prof from '../../Assets/prof.png'
 import Up from '../../Assets/tri.png'
 import Down from '../../Assets/down.png'
+import Doughnut_Sales from '../../Components/Graphs/Doughnut_Sales'
 const Dashboard = props =>{
     const Wwidth=window.innerWidth*0.95;
     const Wheight=window.innerHeight;
@@ -95,22 +96,9 @@ const Dashboard = props =>{
             display:'flex',
             marginTop:'3%'
         }}> 
-            <div style={{
-                width:Wwidth*0.85/(1920/729),
-                height:Wheight*0.9/(1080/439),
-                backgroundColor:'white',
-                borderRadius:Wwidth*0.85/(1920/57),
-                boxShadow:"0px 2px 4px #9E9E9E",
-            }}>
-            </div>
-            <div style={{
-                width:Wwidth*0.85/(1920/729),
-                height:Wheight*0.9/(1080/439),
-                backgroundColor:'white',
-                borderRadius:Wwidth*0.85/(1920/57),
-                boxShadow:"0px 2px 4px #9E9E9E",
-            }}>
-            </div>
+            <Doughnut_Sales title="Audience" labels={['Kids', 'Others', 'Male', 'Female']}/>
+            <Doughnut_Sales title="Age group"  labels={['18 - 25', '10 - 12', '26 - 40', '> 40']} /> 
+            <Doughnut_Sales title="Price range"  labels={['2k - 3.5k', '3.6k - 4.9k', '<2k', '>5k']} />           
         </div>
         <div style={{ 
             flexDirection:'row',
@@ -119,22 +107,8 @@ const Dashboard = props =>{
             display:'flex',
             marginTop:'3%'
         }}> 
-            <div style={{
-                width:Wwidth*0.85/(1920/729),
-                height:Wheight*0.9/(1080/439),
-                backgroundColor:'white',
-                borderRadius:Wwidth*0.85/(1920/57),
-                boxShadow:"0px 2px 4px #9E9E9E",
-            }}>
-            </div>
-            <div style={{
-                width:Wwidth*0.85/(1920/729),
-                height:Wheight*0.9/(1080/439),
-                backgroundColor:'white',
-                borderRadius:Wwidth*0.85/(1920/57),
-                boxShadow:"0px 2px 4px #9E9E9E",
-            }}>
-            </div>
+            
+            <Doughnut_Sales title="Platform used"  labels={['Flipkart', 'FBB', 'Ebay', 'Amazon']} />
         </div>
     </div>
 

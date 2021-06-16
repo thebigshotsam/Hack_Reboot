@@ -19,10 +19,10 @@ const TopSellingProducts = props => {
     return <div style={{
         width:Wwidth*0.85/(1920/505),
         height:Wheight/(1080/496),
-        backgroundColor:'#F2F2F2',
+        backgroundColor:'white',
         
         scrollbarWidth:'thin',
-        borderRadius:Wwidth/(1920/30),
+        borderRadius:Wwidth/(1920/10),
         paddingLeft:10,
         paddingRight:10,
         paddingTop:20,
@@ -84,8 +84,8 @@ const TopSellingProducts = props => {
             overflowY:'scroll',
             position:'relative',
             alignItems:'center',
-            borderEndStartRadius:Wwidth/(1920/30),
-            borderEndEndRadius:Wwidth/(1920/30),
+            borderEndStartRadius:Wwidth/(1920/10),
+            borderEndEndRadius:Wwidth/(1920/10),
         }}>
             {data_li.map((item,index)=><div style={{
                 width:"100%",
